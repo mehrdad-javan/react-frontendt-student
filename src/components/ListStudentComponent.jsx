@@ -20,6 +20,7 @@ class ListStudentComponent extends Component {
         this.props.history.push('/add-student');
     }
 
+    //componentDidMount method is a good place, when we want to call the setState() method for changing the state of our application and render() or the updated data loaded in JSX 
     componentDidMount(){
         StudentService.getStudents().then((res)=> {
             this.setState({students: res.data});

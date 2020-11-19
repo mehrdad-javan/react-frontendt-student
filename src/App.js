@@ -6,7 +6,7 @@ import FooterComponent from './components/FooterComponent';
 import HeaderComponent from './components/HeaderComponent';
 import ViewStudentComponent from './components/ViewStudentComponent';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
-import CreateStudentValidationComponent from './components/CreateStudentValidationComponent';
+import CreateStudentComponent from './components/CreateStudentComponent';
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
                       <Route path = "/" exact component = {ListStudentComponent}></Route>
                       <Route path = "/student" component = {ListStudentComponent}></Route>
                       <Route path = "/view-student/:studentId" component = {ViewStudentComponent}></Route>
-                      <Route path = "/add-student" component = {CreateStudentValidationComponent}></Route>
+                      <Route path = "/add-student" component = {CreateStudentComponent}></Route>
                 </Switch>
             </div>
           <FooterComponent />
